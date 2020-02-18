@@ -26,7 +26,7 @@ SECRET_KEY = '4s-&5uv+95m_@c_scin#4eeybpa5=iz!8gx7=ib6e8koxu5dly'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-#CORS_ORIGIN_ALLOW_ALL = True # Remove this after development
+CORS_ORIGIN_ALLOW_ALL = True # Remove this after development
 
 # Application definition
 
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'agile',
     'rest_framework',
-    #'corsheaders', # Remove this after development
+    'corsheaders', # Remove this after development
 ]
 
 MIDDLEWARE = [
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #'corsheaders.middleware.CorsMiddleware', # Remove this after development
+    'corsheaders.middleware.CorsMiddleware', # Remove this after development
 ]
 
 ROOT_URLCONF = 'eliga_api.urls'
