@@ -30,6 +30,7 @@ ROOT_URLCONF = 'eliga_api.urls'
 ALLOWED_HOSTS = ['*'] # Edit this after development
 CORS_ORIGIN_ALLOW_ALL = True # Edit this after development
 
+
 # Application definition
 
 INSTALLED_APPS = [
