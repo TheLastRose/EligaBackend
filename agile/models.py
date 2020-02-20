@@ -9,14 +9,14 @@ class product_backlog(models.Model):
     hours             = models.PositiveIntegerField()
     dateCreated       = models.DateTimeField(auto_now=True)
 
+class sprint(models.Model):
+    startDate         = models.DateField()
+    dueDate           = models.DateField()
+
 class sprint_backlog(models.Model):
     sprintID            = models.PositiveIntegerField()
     content             = models.TextField()
     dateCreated         = models.DateTimeField(auto_now=True)
-
-class sprint(models.Model):
-    startDate         = models.DateField()
-    dueDate           = models.DateField()
 
 class task_model(models.Model):
     sprintbacklogID     = models.PositiveIntegerField()

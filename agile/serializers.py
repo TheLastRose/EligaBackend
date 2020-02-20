@@ -6,14 +6,17 @@ class ProductbacklogSerializer(serializers.ModelSerializer):
     class Meta:
         model = product_backlog
         fields = '__all__'
-class SprintbacklogSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = sprint_backlog
-        fields = '__all__'
+
 class SprintSerializer(serializers.ModelSerializer):
     class Meta:
         model = sprint
         fields = '__all__'
+        
+class SprintbacklogSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = sprint_backlog
+        fields = '__all__'
+
 class TaskSerializer(serializers.ModelSerializer):
     class Meta:
         model = task_model
