@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 class product_backlog(models.Model):
-    #backlogID   = models.AutoField(primary_key=True)
     sprintID          = models.PositiveIntegerField(default= 0)
     content           = models.TextField()
     priority          = models.CharField(max_length=5)
@@ -15,14 +14,15 @@ class sprint(models.Model):
 
 class sprint_backlog(models.Model):
     sprintID            = models.PositiveIntegerField()
+    productbacklogID    = models.PositiveIntegerField(default= 0)
     content             = models.TextField()
     dateCreated         = models.DateTimeField(auto_now=True)
 
 class task_model(models.Model):
     sprintbacklogID     = models.PositiveIntegerField()
     content             = models.TextField()
-    assignTo            = models.PositiveIntegerField()
-    status              = models.PositiveIntegerField()
+    assignTo            = models.PositiveIntegerField(default= 0)
+    status              = models.PositiveIntegerField(default= 0)
     dateCreated         = models.DateTimeField(auto_now=True)
 
 class user_model(models.Model):

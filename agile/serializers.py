@@ -11,7 +11,7 @@ class SprintSerializer(serializers.ModelSerializer):
     class Meta:
         model = sprint
         fields = '__all__'
-        
+
 class SprintbacklogSerializer(serializers.ModelSerializer):
     class Meta:
         model = sprint_backlog
