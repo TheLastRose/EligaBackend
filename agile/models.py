@@ -27,6 +27,7 @@ class task_model(models.Model):
     dateCreated         = models.DateTimeField(auto_now=True)
 
 class user_model(models.Model):
+    name        = models.CharField(max_length=15,default='Name of User')
     username    = models.CharField(max_length=25)
     password    = models.CharField(max_length=25)
     dateCreated = models.DateTimeField(auto_now=True)
