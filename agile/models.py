@@ -15,7 +15,6 @@ class sprint(models.Model):
 
 class sprint_backlog(models.Model):
     sprintID            = models.PositiveIntegerField()
-    productbacklogID    = models.PositiveIntegerField(default= 0)
     content             = models.TextField()
     dateCreated         = models.DateTimeField(auto_now=True)
 
