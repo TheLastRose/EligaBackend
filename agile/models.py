@@ -9,8 +9,8 @@ class product_backlog(models.Model):
     dateCreated       = models.DateTimeField(auto_now=True)
 
 class sprint_backlog(models.Model):
-    startDate         = models.DateField()
-    dueDate           = models.DateField()
+    startDate         = models.DateField(auto_now=True)
+    dueDate           = models.DateField(auto_now=True)
     content           = models.TextField(default= ' ')
     name              = models.TextField(default= 'Sprint Name')
 
