@@ -7,10 +7,10 @@ class ProductbacklogSerializer(serializers.ModelSerializer):
         model = product_backlog
         fields = '__all__'
 
-class SprintSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = sprint
-        fields = '__all__'
+# class SprintSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = sprint
+#         fields = '__all__'
 
 class SprintbacklogSerializer(serializers.ModelSerializer):
     class Meta:

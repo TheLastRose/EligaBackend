@@ -8,9 +8,9 @@ class ProductbacklogViewSet(viewsets.ModelViewSet):
     serializer_class =  ProductbacklogSerializer
     filter_fields = ('sprintID',)
 
-class SprintViewSet(viewsets.ModelViewSet):
-    queryset = sprint.objects.all()
-    serializer_class =  SprintSerializer
+# class SprintViewSet(viewsets.ModelViewSet):
+#     queryset = sprint.objects.all()
+#     serializer_class =  SprintSerializer
 
 class SprintbacklogViewSet(viewsets.ModelViewSet):
     queryset = sprint_backlog.objects.all()
