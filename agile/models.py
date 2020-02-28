@@ -27,7 +27,7 @@ class task_model(models.Model):
     assignTo            = models.PositiveIntegerField(default= 0)
     dateCompleted       = models.DateField(auto_now=True)
     hours               = models.PositiveIntegerField(default= 0)
-    status              = models.CharField(max_length=10)
+    status              = models.CharField(max_length=10, default= 'Incomplete')
     dateCreated         = models.DateTimeField(auto_now=True)
 
 # class task_status(models.Model):
