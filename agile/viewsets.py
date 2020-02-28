@@ -25,4 +25,4 @@ class TaskViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = user_model.objects.all()
     serializer_class =  UserSerializer
-    filter_fields = ('id',)
+    filter_fields = ('id','role',)
