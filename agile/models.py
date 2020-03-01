@@ -19,7 +19,7 @@ class task_model(models.Model):
     productbacklogID    = models.PositiveIntegerField(default= 0)
     content             = models.TextField()
     assignTo            = models.PositiveIntegerField(default= 0)
-    assignToName        = models.CharField(max_length=15,default='Name of User')
+    assignToName        = models.CharField(max_length=15,default='None')
     dateCompleted       = models.DateField(blank=True) #Remember set =null in DB
     hours               = models.PositiveIntegerField(default= 0)
     status              = models.CharField(max_length=10, default= 'Incomplete')
