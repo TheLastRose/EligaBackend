@@ -59,6 +59,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
     'http://eliga.s3-website-us-west-2.amazonaws.com/',
+    'http://localhost:8080',
 )
 
 CORS_ALLOW_METHODS = [
