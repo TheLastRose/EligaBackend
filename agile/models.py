@@ -17,7 +17,7 @@ class sprint_backlog(models.Model):
 class task_model(models.Model):
     sprintbacklogID     = models.PositiveIntegerField(default= 0)
     productbacklogID    = models.PositiveIntegerField(default= 0)
-    content             = models.TextField()
+    content             = models.TextField(blank=True)
     assignTo            = models.PositiveIntegerField(default= 0)
     assignToName        = models.CharField(max_length=50,default='None')
     dateCompleted       = models.DateField(blank=True) #Remember set =null in DB
