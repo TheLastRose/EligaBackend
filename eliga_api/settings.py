@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True # Edit this after development
+CORS_ORIGIN_ALLOW_ALL = False # Edit this after development
 
 CORS_ALLOW_METHODS = [
     'DELETE',
