@@ -55,7 +55,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False # Edit this after development
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+    'http://eliga.s3-website-us-west-2.amazonaws.com/',
+)
 
 CORS_ALLOW_METHODS = [
     'DELETE',
