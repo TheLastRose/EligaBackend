@@ -19,14 +19,14 @@ class task_model(models.Model):
     productbacklogID    = models.PositiveIntegerField(default= 0)
     content             = models.TextField()
     assignTo            = models.PositiveIntegerField(default= 0)
-    assignToName        = models.CharField(max_length=15,default='None')
+    assignToName        = models.CharField(max_length=50,default='None')
     dateCompleted       = models.DateField(blank=True) #Remember set =null in DB
     hours               = models.PositiveIntegerField(default= 0)
     status              = models.CharField(max_length=10, default= 'Incomplete')
     dateCreated         = models.DateTimeField(auto_now=True)
 
 class user_model(models.Model):
-    name        = models.CharField(max_length=15,default='Name of User')
-    role        = models.CharField(max_length=15,default='User Role')
+    name        = models.CharField(max_length=50,default='Name of User')
+    role        = models.CharField(max_length=50,default='User Role')
     dateCreated = models.DateTimeField(auto_now=True)
     #name, role, avatar
