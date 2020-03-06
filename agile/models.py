@@ -29,4 +29,3 @@ class user_model(models.Model):
     name        = models.CharField(max_length=50,default='Name of User')
     role        = models.CharField(max_length=50,default='User Role')
     dateCreated = models.DateTimeField(auto_now=True)
-    #name, role, avatar
